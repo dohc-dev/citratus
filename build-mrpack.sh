@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # ============================================================================
 # build-mrpack.sh - Script to generate client and server .mrpack archives
 # ============================================================================
@@ -7,163 +6,179 @@
 # files (client and server variants) with configurable exclusions.
 #
 # Requirements:
-#   - bash, zip, jq
+#   - bash/sh shell
+#   - jq (for JSON parsing)
+#   - zip or tar (for archive creation)
+#   - Standard Unix tools: mkdir, cp, rm, find, grep, cat, jq
 #   - build/modrinth.index.json
 #   - build/overrides/ (shared configs)
 #   - build/client/overrides/ and build/server/overrides/ (variant configs)
 #   - build/mods/, build/resourcepacks/, build/shaderpacks/
 #
 # Configuration:
-#   - build-mrpack.toml (optional) for exclude lists per variant
+#   - build-mrpack.json for exclude lists per variant
+#
+# Usage:
+#   ./build-mrpack.sh
 # ============================================================================
 
 set -euo pipefail
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+# ============================================================================
+# Configuration
+# ============================================================================
 
-# Paths
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BUILD_DIR="${SCRIPT_DIR}/build"
-CONFIG_FILE="${SCRIPT_DIR}/build-mrpack.toml"
+CONFIG_FILE="${SCRIPT_DIR}/build-mrpack.json"
 BUILDS_OUTPUT_DIR="${SCRIPT_DIR}/builds"
 MODRINTH_INDEX="${BUILD_DIR}/modrinth.index.json"
 TEMP_BASE="${TMPDIR:-/tmp}"
 
+# Global arrays for exclusions
+CLIENT_EXCLUDE=()
+SERVER_EXCLUDE=()
+
+# Global manifest variables
+MODPACK_NAME=""
+VERSION_ID=""
+CLIENT_MRPACK=""
+SERVER_MRPACK=""
+
 # ============================================================================
-# Utility Functions
+# Utility Functions - Logging
 # ============================================================================
 
 log_info() {
-    echo -e "${BLUE}[INFO]${NC} $1"
+    echo -e "\033[36m[INFO]\033[0m $1"
 }
 
 log_success() {
-    echo -e "${GREEN}[SUCCESS]${NC} $1"
+    echo -e "\033[32m[SUCCESS]\033[0m $1"
 }
 
 log_warning() {
-    echo -e "${YELLOW}[WARNING]${NC} $1"
+    echo -e "\033[33m[WARNING]\033[0m $1"
 }
 
 log_error() {
-    echo -e "${RED}[ERROR]${NC} $1"
+    echo -e "\033[31m[ERROR]\033[0m $1" >&2
 }
 
 # ============================================================================
-# Phase 0: Check Dependencies & Load Configuration
+# Utility Functions - Dependency & Structure Checks
 # ============================================================================
 
-check_dependencies() {
+test_dependencies() {
     log_info "Checking dependencies..."
     
-    local missing=0
+    # Check for jq
+    if ! command -v jq &> /dev/null; then
+        log_error "jq not found. Please install jq for JSON parsing."
+        exit 1
+    fi
+    log_success "jq found"
     
-    for cmd in zip jq; do
-        if ! command -v "$cmd" &> /dev/null; then
-            log_error "Missing required tool: $cmd"
-            missing=$((missing + 1))
-        fi
-    done
+    # Check for zip or tar
+    local has_zip=false
+    local has_tar=false
     
-    if [ $missing -gt 0 ]; then
-        log_error "Please install missing tools and try again"
+    if command -v zip &> /dev/null; then
+        has_zip=true
+    fi
+    
+    if command -v tar &> /dev/null; then
+        has_tar=true
+    fi
+    
+    if ! $has_zip && ! $has_tar; then
+        log_error "Neither 'zip' nor 'tar' found. Please install one of these tools."
         exit 1
     fi
     
-    log_success "All dependencies found"
+    # Determine which tool to use
+    if $has_zip; then
+        ZIP_TOOL="zip"
+        log_success "Using 'zip' for archive creation"
+    else
+        ZIP_TOOL="tar"
+        log_success "Using 'tar' for archive creation"
+    fi
 }
 
-check_build_structure() {
+test_build_structure() {
     log_info "Checking build structure..."
     
-    if [ ! -f "$MODRINTH_INDEX" ]; then
+    if [[ ! -f "$MODRINTH_INDEX" ]]; then
         log_error "Missing: $MODRINTH_INDEX"
         exit 1
     fi
     
-    if [ ! -d "${BUILD_DIR}/overrides" ]; then
-        log_error "Missing: ${BUILD_DIR}/overrides"
+    if [[ ! -d "$BUILD_DIR/overrides" ]]; then
+        log_error "Missing: $BUILD_DIR/overrides"
         exit 1
     fi
     
     log_success "Build structure is valid"
 }
 
-# Parse TOML arrays - simple regex-based parser
-# Usage: parse_toml_array "config.toml" "section" "key"
-# Returns space-separated quoted values
-parse_toml_array() {
-    local file=$1
-    local section=$2
-    local key=$3
-    
-    if [ ! -f "$file" ]; then
-        echo ""
-        return 0
-    fi
-    
-    # Find section and extract the key value
-    # Match: key = ["value1", "value2", ...]
-    local result=$(sed -n "/\[$section\]/,/^\[/p" "$file" | grep "^${key}\s*=" | head -1)
-    
-    if [ -z "$result" ]; then
-        echo ""
-        return 0
-    fi
-    
-    # Extract array values: ["item1", "item2"] -> item1 item2
-    # Remove key = [ and ]
-    local array_str=$(echo "$result" | sed 's/^[^=]*=\s*\[//;s/\]\s*$//')
-    
-    # Remove quotes and split by comma
-    echo "$array_str" | sed 's/"//g' | tr ',' '\n' | sed 's/^\s*//;s/\s*$//' | tr '\n' ' '
-}
+# ============================================================================
+# Configuration Parsing
+# ============================================================================
 
 load_config() {
     log_info "Loading configuration..."
     
-    # Initialize empty exclude lists
-    CLIENT_EXCLUDE=()
-    SERVER_EXCLUDE=()
-    
-    if [ ! -f "$CONFIG_FILE" ]; then
+    if [[ ! -f "$CONFIG_FILE" ]]; then
         log_warning "Config file not found: $CONFIG_FILE"
         log_info "Using default (no exclusions)"
-        return 0
+        return
     fi
     
     log_info "Parsing exclusion lists from $CONFIG_FILE"
     
-    # Parse client exclusions
-    local client_exclude_str=$(parse_toml_array "$CONFIG_FILE" "client" "exclude")
-    if [ -n "$client_exclude_str" ]; then
-        mapfile -t CLIENT_EXCLUDE < <(echo "$client_exclude_str" | tr ' ' '\n' | grep -v '^$')
-        log_info "Client exclusions: ${#CLIENT_EXCLUDE[@]} items"
+    # Parse client exclusions using jq
+    if command -v jq &> /dev/null; then
+        local client_exclude_json
+        client_exclude_json=$(jq -r '.client.exclude[]?' "$CONFIG_FILE" 2>/dev/null || echo "")
+        if [[ -n "$client_exclude_json" ]]; then
+            while IFS= read -r item; do
+                if [[ -n "$item" ]]; then
+                    CLIENT_EXCLUDE+=("$item")
+                fi
+            done <<< "$client_exclude_json"
+        fi
+        
+        # Parse server exclusions using jq
+        local server_exclude_json
+        server_exclude_json=$(jq -r '.server.exclude[]?' "$CONFIG_FILE" 2>/dev/null || echo "")
+        if [[ -n "$server_exclude_json" ]]; then
+            while IFS= read -r item; do
+                if [[ -n "$item" ]]; then
+                    SERVER_EXCLUDE+=("$item")
+                fi
+            done <<< "$server_exclude_json"
+        fi
     fi
     
-    # Parse server exclusions
-    local server_exclude_str=$(parse_toml_array "$CONFIG_FILE" "server" "exclude")
-    if [ -n "$server_exclude_str" ]; then
-        mapfile -t SERVER_EXCLUDE < <(echo "$server_exclude_str" | tr ' ' '\n' | grep -v '^$')
-        log_info "Server exclusions: ${#SERVER_EXCLUDE[@]} items"
-    fi
+    log_info "Client exclusions: ${#CLIENT_EXCLUDE[@]} items"
+    log_info "Server exclusions: ${#SERVER_EXCLUDE[@]} items"
 }
 
 # ============================================================================
-# Phase 1: Initialize & Read Manifest
+# Manifest Reading & Prompts
 # ============================================================================
 
 read_manifest() {
     log_info "Reading modrinth.index.json..."
     
-    # Extract name and versionId using jq
-    MODPACK_NAME=$(jq -r '.name' "$MODRINTH_INDEX" 2>/dev/null || echo "modpack")
-    VERSION_ID=$(jq -r '.versionId' "$MODRINTH_INDEX" 2>/dev/null || echo "1.0.0")
+    if ! command -v jq &> /dev/null; then
+        log_error "jq required to parse modrinth.index.json"
+        exit 1
+    fi
+    
+    MODPACK_NAME=$(jq -r '.name // "UnknownPack"' "$MODRINTH_INDEX")
+    VERSION_ID=$(jq -r '.versionId // "0.0.0"' "$MODRINTH_INDEX")
     
     log_success "Modpack: $MODPACK_NAME"
     log_success "Version: $VERSION_ID"
@@ -172,15 +187,13 @@ read_manifest() {
 prompt_customization() {
     log_info "Customization prompts..."
     
-    # Prompt for version ID
     read -p "Version ID [$VERSION_ID]: " user_version
-    if [ -n "$user_version" ]; then
+    if [[ -n "$user_version" ]]; then
         VERSION_ID="$user_version"
     fi
     
-    # Prompt for modpack name
     read -p "Modpack name [$MODPACK_NAME]: " user_name
-    if [ -n "$user_name" ]; then
+    if [[ -n "$user_name" ]]; then
         MODPACK_NAME="$user_name"
     fi
     
@@ -194,7 +207,7 @@ prompt_customization() {
 }
 
 # ============================================================================
-# Phase 2: Helper functions for file operations
+# File Operations - Copy & Exclusions
 # ============================================================================
 
 copy_overrides() {
@@ -202,61 +215,67 @@ copy_overrides() {
     local dest_dir=$2
     local variant=$3
     
-    if [ ! -d "$source_dir" ]; then
+    if [[ ! -d "$source_dir" ]]; then
         log_warning "Source directory not found: $source_dir (skipping)"
-        return 0
+        return
     fi
     
     log_info "Copying overrides to $variant: $source_dir"
+    
+    # Create destination if needed
+    mkdir -p "$dest_dir"
+    
+    # Copy all files and directories
     cp -r "$source_dir"/* "$dest_dir/" 2>/dev/null || true
 }
 
 apply_exclusions() {
     local work_dir=$1
     local variant=$2
-    local -n exclude_list=$3
+    shift 2
+    local exclude_patterns=("$@")
     
-    if [ ${#exclude_list[@]} -eq 0 ]; then
-        return 0
+    if [[ ${#exclude_patterns[@]} -eq 0 ]]; then
+        return
     fi
     
-    log_info "Applying exclusions for $variant (${#exclude_list[@]} items)"
+    log_info "Applying exclusions for $variant (${#exclude_patterns[@]} items)"
     
-    for exclude_pattern in "${exclude_list[@]}"; do
-        # Trim whitespace
-        exclude_pattern=$(echo "$exclude_pattern" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    for pattern in "${exclude_patterns[@]}"; do
+        pattern=$(echo "$pattern" | xargs)  # Trim whitespace
         
-        if [ -z "$exclude_pattern" ]; then
+        if [[ -z "$pattern" ]]; then
             continue
         fi
         
-        # Check if pattern contains wildcards
-        if [[ "$exclude_pattern" == *"*"* ]] || [[ "$exclude_pattern" == *"?"* ]]; then
-            # Wildcard pattern - use find with -wholename for path matching
-            local found_any=0
-            
-            while IFS= read -r matched_path; do
-                if [ -n "$matched_path" ]; then
-                    found_any=1
-                    # Get relative path for display
-                    local rel_path="${matched_path#$work_dir/}"
-                    log_info "  Excluding: $rel_path"
-                    rm -rf "$matched_path" 2>/dev/null || true
+        # Find matching items using find with pattern matching
+        local matched_count=0
+        local found_any=false
+        
+        # Handle patterns with wildcards
+        if [[ "$pattern" =~ [\*\?] ]]; then
+            # Wildcard pattern - use find to recursively search
+            while IFS= read -r -d '' item; do
+                if [[ -n "$item" ]]; then
+                    found_any=true
+                    matched_count=$((matched_count + 1))
+                    log_info "  Excluding: ${item#$work_dir/}"
+                    rm -rf "$item"
                 fi
-            done < <(find "$work_dir" -wholename "*$exclude_pattern" 2>/dev/null)
-            
-            if [ $found_any -eq 0 ]; then
-                log_warning "  Exclude pattern matched nothing: $exclude_pattern"
-            fi
+            done < <(find "$work_dir" -path "*$pattern" -print0 2>/dev/null || true)
         else
             # Exact path match
-            local full_path="${work_dir}/${exclude_pattern}"
-            if [ -e "$full_path" ]; then
-                log_info "  Excluding: $exclude_pattern"
-                rm -rf "$full_path" 2>/dev/null || true
-            else
-                log_warning "  Exclude pattern matched nothing: $exclude_pattern"
+            local full_path="${work_dir}/${pattern}"
+            if [[ -e "$full_path" ]]; then
+                found_any=true
+                matched_count=1
+                log_info "  Excluding: $pattern"
+                rm -rf "$full_path"
             fi
+        fi
+        
+        if ! $found_any; then
+            log_warning "  Exclude pattern matched nothing: $pattern"
         fi
     done
 }
@@ -265,18 +284,24 @@ copy_content_dirs() {
     local work_dir=$1
     local variant=$2
     
-    # List of content directories to copy if they exist
     local dirs=("mods" "resourcepacks" "shaderpacks")
     
     for dir in "${dirs[@]}"; do
-        if [ -d "${BUILD_DIR}/${dir}" ]; then
+        local source_path="${BUILD_DIR}/${dir}"
+        if [[ -d "$source_path" ]]; then
             log_info "Copying $dir/ to $variant"
-            cp -r "${BUILD_DIR}/${dir}" "$work_dir/" 2>/dev/null || true
+            local dest_path="${work_dir}/${dir}"
+            mkdir -p "$dest_path"
+            cp -r "$source_path"/* "$dest_path/" 2>/dev/null || true
         fi
     done
 }
 
-create_mrpack() {
+# ============================================================================
+# Archive Creation
+# ============================================================================
+
+create_mrpack_archive() {
     local work_dir=$1
     local output_file=$2
     local variant=$3
@@ -284,96 +309,102 @@ create_mrpack() {
     log_info "Creating $variant .mrpack archive..."
     
     # Create proper .mrpack structure: modrinth.index.json at root, everything else in overrides/
-    local mrpack_dir="${TEMP_BASE}/mrpack_structure_${variant}_$$"
-    mkdir -p "$mrpack_dir/overrides"
+    local mrpack_dir
+    mrpack_dir=$(mktemp -d "${TEMP_BASE}/mrpack_structure_${variant}_XXXXXX")
     
-    # Copy modrinth.index.json to root
-    cp "$MODRINTH_INDEX" "$mrpack_dir/"
+    # Cleanup on exit
+    trap "rm -rf '$mrpack_dir'" RETURN
     
-    # Copy everything from work_dir into overrides/
-    cp -r "$work_dir"/* "$mrpack_dir/overrides/" 2>/dev/null || true
+    # Copy modrinth.index.json to root of .mrpack
+    cp "$MODRINTH_INDEX" "${mrpack_dir}/modrinth.index.json"
     
-    # Create the archive
+    # Move everything from work_dir into overrides/ subdirectory
+    local overrides_dir="${mrpack_dir}/overrides"
+    mkdir -p "$overrides_dir"
+    
+    cp -r "$work_dir"/* "$overrides_dir/" 2>/dev/null || true
+    
+    # Create the .mrpack archive
     local output_path="${BUILDS_OUTPUT_DIR}/${output_file}"
     
-    # Try 7z first for faster compression, fallback to zip
-    if command -v 7z &> /dev/null; then
-        (cd "$mrpack_dir" && 7z a -tzip -mx5 "$output_path" ./* > /dev/null 2>&1)
+    if [[ "$ZIP_TOOL" == "zip" ]]; then
+        # Use zip for compression
+        (cd "$mrpack_dir" && zip -q -r "$output_path" . )
     else
-        (cd "$mrpack_dir" && zip -r -q "$output_path" . 2>/dev/null)
+        # Use tar for compression
+        tar -czf "$output_path" -C "$mrpack_dir" .
     fi
     
-    # Cleanup structure directory
-    rm -rf "$mrpack_dir"
-    
-    if [ -f "$output_path" ]; then
-        local size=$(du -h "$output_path" | cut -f1)
-        log_success "$variant archive created: $output_path ($size)"
-        echo "$output_path"
+    if [[ -f "$output_path" ]]; then
+        local size_bytes
+        size_bytes=$(stat -f%z "$output_path" 2>/dev/null || stat -c%s "$output_path" 2>/dev/null)
+        local size_mb=$((size_bytes / 1024 / 1024))
+        log_success "$variant archive created: $output_path (${size_mb} MB)"
     else
-        log_error "Failed to create $variant archive"
-        return 1
+        log_error "Failed to create $variant archive at $output_path"
+        exit 1
     fi
 }
 
 # ============================================================================
-# Phase 3: Build Client & Server Variants
+# Build Variant Orchestration
 # ============================================================================
 
 build_variant() {
     local variant=$1
     local output_file=$2
-    local -n exclude_list=$3
+    shift 2
+    local exclude_patterns=("$@")
     
-    log_info ""
-    log_info "=========================================="
-    log_info "Building $variant variant"
-    log_info "=========================================="
+    echo ""
+    echo "=========================================="
+    echo "Building $variant variant"
+    echo "=========================================="
     
     # Create temporary working directory
-    local temp_dir="${TEMP_BASE}/mrpack_${variant}_$$"
+    local temp_dir
+    temp_dir=$(mktemp -d "${TEMP_BASE}/mrpack_${variant}_XXXXXX")
     log_info "Using temporary directory: $temp_dir"
     
-    mkdir -p "$temp_dir"
-    trap "rm -rf '$temp_dir'" EXIT
+    # Ensure cleanup on exit
+    trap "rm -rf '$temp_dir'" RETURN
     
     # Step 1: Copy shared overrides
     copy_overrides "${BUILD_DIR}/overrides" "$temp_dir" "$variant"
     
-    # Step 2: Copy variant-specific overrides (these override shared)
+    # Step 2: Copy variant-specific overrides
     local variant_dir="${BUILD_DIR}/${variant}/overrides"
-    if [ -d "$variant_dir" ]; then
+    if [[ -d "$variant_dir" ]]; then
         log_info "Applying $variant-specific overrides from $variant_dir"
         copy_overrides "$variant_dir" "$temp_dir" "$variant"
     fi
     
-    # Step 3: Copy content directories (mods, resourcepacks, shaderpacks)
+    # Step 3: Copy content directories
     copy_content_dirs "$temp_dir" "$variant"
     
     # Step 4: Apply exclusions AFTER all content is copied
-    apply_exclusions "$temp_dir" "$variant" exclude_list
+    apply_exclusions "$temp_dir" "$variant" "${exclude_patterns[@]}"
     
     # Step 5: Create the .mrpack archive
-    create_mrpack "$temp_dir" "$output_file" "$variant"
+    create_mrpack_archive "$temp_dir" "$output_file" "$variant"
     
-    # Cleanup handled by trap
     log_success "$variant build complete"
 }
 
 # ============================================================================
-# Phase 4: Main Execution
+# Main Execution
 # ============================================================================
 
 main() {
     echo ""
     echo "╔════════════════════════════════════════════════════════════╗"
-    echo "║       Modrinth Modpack (.mrpack) Builder                   ║"
+    echo "║       Modrinth Modpack (.mrpack) Builder (Shell)           ║"
     echo "╚════════════════════════════════════════════════════════════╝"
     echo ""
     
     # Phase 0: Check & Load
-    check_dependencies
-    check_build_structure
+    test_dependencies
+    test_build_structure
     load_config
     
     # Phase 1: Initialize
@@ -385,8 +416,8 @@ main() {
     log_info "Output directory: $BUILDS_OUTPUT_DIR"
     
     # Phase 2-3: Build variants
-    build_variant "client" "$CLIENT_MRPACK" CLIENT_EXCLUDE
-    build_variant "server" "$SERVER_MRPACK" SERVER_EXCLUDE
+    build_variant "client" "$CLIENT_MRPACK" "${CLIENT_EXCLUDE[@]}"
+    build_variant "server" "$SERVER_MRPACK" "${SERVER_EXCLUDE[@]}"
     
     # Summary
     echo ""

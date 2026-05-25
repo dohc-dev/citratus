@@ -1,0 +1,10 @@
+{
+  "client": {
+    "exclude": []
+  },
+  "server": {
+    "exclude": [
+      "*mods/voxy*alpha.jar"
+    ]
+  }
+}
