@@ -1,0 +1,3205 @@
+{
+  "version": 1,
+  "selectedProfile": 0,
+  "profiles": [
+    {
+      "name": "dohc",
+      "updatedAt": "2026-06-01T21:42:59.944119300",
+      "bindings": [
+        {
+          "name": "keyinfo.copycats.fill_copycat",
+          "action": "Fill Copycat with Material",
+          "category": "Copycats",
+          "categoryName": "Copycats",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.toolbelt",
+          "action": "Access Nearby Toolboxes",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.alt_modifier",
+          "action": "Alt Modifier",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.ctrl_modifier",
+          "action": "Ctrl Modifier",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.toolmenu",
+          "action": "Focus Schematic Overlay",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.rotate_menu",
+          "action": "Open Block Rotation Menu",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "create.keyinfo.shift_modifier",
+          "action": "Shift Modifier",
+          "category": "Create",
+          "categoryName": "Create",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "simulated.keyinfo.rotate_mode",
+          "action": "Physics Staff Rotate Mode",
+          "category": "Create Simulated",
+          "categoryName": "Create Simulated",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "simulated.keyinfo.scroll_down",
+          "action": "Scroll Down",
+          "category": "Create Simulated",
+          "categoryName": "Create Simulated",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "simulated.keyinfo.scroll_up",
+          "action": "Scroll Up",
+          "category": "Create Simulated",
+          "categoryName": "Create Simulated",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "tfmg.keyinfo.custom_button",
+          "action": "Engine Controller Custom Button",
+          "category": "Create: The Factory Must Grow",
+          "categoryName": "Create: The Factory Must Grow",
+          "key": "key.keyboard.b",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "tfmg.keyinfo.engine_start",
+          "action": "Start Engine",
+          "category": "Create: The Factory Must Grow",
+          "categoryName": "Create: The Factory Must Grow",
+          "key": "key.keyboard.i",
+          "defaultKey": "key.keyboard.i",
+          "priority": 0
+        },
+        {
+          "name": "tfmg.keyinfo.transmission_shift_down",
+          "action": "Transmission Shift Down",
+          "category": "Create: The Factory Must Grow",
+          "categoryName": "Create: The Factory Must Grow",
+          "key": "key.keyboard.page.down",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "tfmg.keyinfo.transmission_shift_up",
+          "action": "Transmission Shift Up",
+          "category": "Create: The Factory Must Grow",
+          "categoryName": "Create: The Factory Must Grow",
+          "key": "key.keyboard.page.up",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "create_tweaked_controllers.keybind.mouse_reset",
+          "action": "Center mouse cursor",
+          "category": "Create: Tweaked Controllers",
+          "categoryName": "Create: Tweaked Controllers",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "create_tweaked_controllers.keybind.controller_exit",
+          "action": "Exit controller",
+          "category": "Create: Tweaked Controllers",
+          "categoryName": "Create: Tweaked Controllers",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "create_tweaked_controllers.keybind.mouse_focus",
+          "action": "Grab mouse movements",
+          "category": "Create: Tweaked Controllers",
+          "categoryName": "Create: Tweaked Controllers",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.modernui.openCenter",
+          "action": "Open Action Center",
+          "category": "Modern UI",
+          "categoryName": "Modern UI",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.modernui.zoom",
+          "action": "Zoom",
+          "category": "Modern UI",
+          "categoryName": "Modern UI",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.adjust_camera_down",
+          "action": "Adjust Camera Down",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.page.down",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.adjust_camera_in",
+          "action": "Adjust Camera In",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.up",
+          "defaultKey": "key.keyboard.up",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.adjust_camera_left",
+          "action": "Adjust Camera Left",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.left",
+          "defaultKey": "key.keyboard.left",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.adjust_camera_out",
+          "action": "Adjust Camera Out",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.down",
+          "defaultKey": "key.keyboard.down",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.adjust_camera_right",
+          "action": "Adjust Camera Right",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.right",
+          "defaultKey": "key.keyboard.right",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.adjust_camera_up",
+          "action": "Adjust Camera Up",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.page.up",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.enter_first_person",
+          "action": "Enter First Person",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.enter_shoulder_surfing",
+          "action": "Enter Shoulder Surfing",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.enter_third_person_back",
+          "action": "Enter Third Person (Back)",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.enter_third_person_front",
+          "action": "Enter Third Person (Front)",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.free_look",
+          "action": "Free Look",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.swap_shoulder",
+          "action": "Swap Shoulder",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.o",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_camera_coupling",
+          "action": "Toggle Camera Coupling",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_first_person",
+          "action": "Toggle First Person",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_third_person_back",
+          "action": "Toggle Third Person (Back)",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_third_person_front",
+          "action": "Toggle Third Person (Front)",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_x_offset_presets",
+          "action": "Toggle X-Offset Presets",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_y_offset_presets",
+          "action": "Toggle Y-Offset Presets",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.shouldersurfing.toggle_z_offset_presets",
+          "action": "Toggle Z-Offset Presets",
+          "category": "Shoulder Surfing",
+          "categoryName": "Shoulder Surfing",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "railways.keyinfo.bogey_menu",
+          "action": "Open Bogey Menu",
+          "category": "Steam \u0027n\u0027 Rails",
+          "categoryName": "Steam \u0027n\u0027 Rails",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "railways.keyinfo.cycle_menu",
+          "action": "Open Cycle Menu",
+          "category": "Steam \u0027n\u0027 Rails",
+          "categoryName": "Steam \u0027n\u0027 Rails",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.wi_zoom.zoom",
+          "action": "Zoom",
+          "category": "WI Zoom",
+          "categoryName": "WI Zoom",
+          "key": "key.mouse.4",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_alternative_list_players",
+          "action": "\"List Players\" Alternative",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_enlarge_map",
+          "action": "Enlarge Minimap",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.z",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_minimap_server_profiles",
+          "action": "Minimap Server Settings",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_minimap_settings",
+          "action": "Minimap Settings",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.y",
+          "defaultKey": "key.keyboard.y",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_new_waypoint",
+          "action": "New Waypoint",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_waypoints_key",
+          "action": "Open Waypoint Screen",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.u",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_instant_waypoint",
+          "action": "Quick Waypoint",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.keypad.add",
+          "defaultKey": "key.keyboard.keypad.add",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_reverse_entity_radar",
+          "action": "Reverse Radar Render Order",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_switch_waypoint_set",
+          "action": "Switch Waypoint Set",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_display_all_sets",
+          "action": "Toggle All WP Sets Render",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_pac_chunk_claims",
+          "action": "Toggle Chunk Claims",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_grid",
+          "action": "Toggle Chunk Grid",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_entity_radar",
+          "action": "Toggle Entity Radar",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_waypoints",
+          "action": "Toggle In-World Waypoints",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_light_overlay",
+          "action": "Toggle Light Overlay",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_manual_cave_mode",
+          "action": "Toggle Manual Cave Mode",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_map",
+          "action": "Toggle Minimap",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_map_waypoints",
+          "action": "Toggle On-Map Waypoints",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_slime",
+          "action": "Toggle Slime Chunks",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_tracked_players_in_world",
+          "action": "Toggle Tracked Players In World",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_tracked_players_on_map",
+          "action": "Toggle Tracked Players On Map",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_zoom_in",
+          "action": "Zoom In Minimap",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_zoom_out",
+          "action": "Zoom Out Minimap",
+          "category": "Xaero\u0027s Minimap",
+          "categoryName": "Xaero\u0027s Minimap",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_world_map_server_settings",
+          "action": "Open Server Settings",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_open_settings",
+          "action": "Open Settings",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.right.bracket",
+          "defaultKey": "key.keyboard.right.bracket",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_open_map",
+          "action": "Open World Map",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.m",
+          "defaultKey": "key.keyboard.m",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_quick_confirm",
+          "action": "Quick Manual Confirmation",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.right.shift",
+          "defaultKey": "key.keyboard.right.shift",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_toggle_dimension",
+          "action": "Toggle Dimension",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_map_zoom_in",
+          "action": "Zoom In (alternative)",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gui.xaero_map_zoom_out",
+          "action": "Zoom Out (alternative)",
+          "category": "Xaero\u0027s World Map",
+          "categoryName": "Xaero\u0027s World Map",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.world_map_baritone_elytra_here",
+          "action": "Baritone Elytra Here (WorldMap)",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.world_map_baritone_goal_here",
+          "action": "Baritone Goal Here (WorldMap)",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.world_map_baritone_path_here",
+          "action": "Baritone Path Here (WorldMap)",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.2b2t_highways_enabled",
+          "action": "Highways",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.lava_columns",
+          "action": "Lava Columns",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.new_chunks_highlighting",
+          "action": "Liquid NewChunks",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.map_art_grid",
+          "action": "Map Art Grid",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.old_biomes_enabled",
+          "action": "Old Biomes",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.old_chunks_highlighting",
+          "action": "OldChunks",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.palette_new_chunks_highlighting",
+          "action": "Palette NewChunks",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.player_spawn_chunks",
+          "action": "Player Spawn Chunks",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.portals",
+          "action": "Portals",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.portal_skip_detection",
+          "action": "PortalSkips",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.region_grid",
+          "action": "Regions",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.show_render_distance",
+          "action": "Show Render Distance",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.spawn_chunks",
+          "action": "Spawn Chunks",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.gui.world_map.start_drawing",
+          "action": "Start Drawing",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.switch_to_end",
+          "action": "Switch to End",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.switch_to_nether",
+          "action": "Switch to Nether",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.switch_to_overworld",
+          "action": "Switch to Overworld",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.switch_waypoints_to_end",
+          "action": "Switch Waypoints to End",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.switch_waypoints_to_nether",
+          "action": "Switch Waypoints to Nether",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.keybind.switch_waypoints_to_overworld",
+          "action": "Switch Waypoints to Overworld",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "xaeroplus.setting.world_tools",
+          "action": "WorldTools",
+          "category": "XaeroPlus",
+          "categoryName": "XaeroPlus",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "accessories.key.open_accessories_screen",
+          "action": "Open Accessories Screen",
+          "category": "accessories.key.category.accessories",
+          "categoryName": "Accessories",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.accessorify.open_widget",
+          "action": "Open contextual selection widget",
+          "category": "category.accessorify.keybindings",
+          "categoryName": "Accessorify",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.accessorify.open_ender_chest",
+          "action": "Open equipped ender chest",
+          "category": "category.accessorify.keybindings",
+          "categoryName": "Accessorify",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.accessorify.use_spyglass",
+          "action": "Use spyglass accessory",
+          "category": "category.accessorify.keybindings",
+          "categoryName": "Accessorify",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.beltborne_lanterns.open_config",
+          "action": "Open Config Screen",
+          "category": "category.beltborne_lanterns",
+          "categoryName": "Beltborne Lanterns",
+          "key": "key.keyboard.l",
+          "defaultKey": "key.keyboard.l",
+          "priority": 0
+        },
+        {
+          "name": "key.beltborne_lanterns.open_debug",
+          "action": "Open Lantern Debug Editor",
+          "category": "category.beltborne_lanterns",
+          "categoryName": "Beltborne Lanterns",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.beltborne_lanterns.toggle_lantern",
+          "action": "Toggle Belt Lantern",
+          "category": "category.beltborne_lanterns",
+          "categoryName": "Beltborne Lanterns",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "key.beltborne_lanterns.toggle_debug",
+          "action": "Toggle Debug Gizmos",
+          "category": "category.beltborne_lanterns",
+          "categoryName": "Beltborne Lanterns",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.createrailwaysnavigator.route_overlay_options",
+          "action": "Show Route Overlay Options",
+          "category": "category.createrailwaysnavigator.crn",
+          "categoryName": "Create Railways Navigator",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.freecam.configGui",
+          "action": "Config GUI",
+          "category": "category.freecam.freecam",
+          "categoryName": "Freecam",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.freecam.playerControl",
+          "action": "Control Player",
+          "category": "category.freecam.freecam",
+          "categoryName": "Freecam",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.freecam.tripodReset",
+          "action": "Reset Tripod",
+          "category": "category.freecam.freecam",
+          "categoryName": "Freecam",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.freecam.toggle",
+          "action": "Toggle Freecam",
+          "category": "category.freecam.freecam",
+          "categoryName": "Freecam",
+          "key": "key.keyboard.f4",
+          "defaultKey": "key.keyboard.f4",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.reload",
+          "action": "Reload Shaders",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.shaderPackSelection",
+          "action": "Shaderpack Selection Screen",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.o",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.toggleShaders",
+          "action": "Toggle Shaders",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.f7",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "iris.keybind.wireframe",
+          "action": "Wireframe (SP only)",
+          "category": "iris.keybinds",
+          "categoryName": "Iris",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatOneItem",
+          "action": "Cheat 1 Item",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI (Cheat Mode)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatOneItem2",
+          "action": "Cheat 1 Item",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI (Cheat Mode)",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatItemStack",
+          "action": "Cheat 1 Stack",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI (Cheat Mode)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.cheatItemStack2",
+          "action": "Cheat 1 Stack",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI (Cheat Mode)",
+          "key": "key.mouse.middle",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleCheatMode",
+          "action": "Toggle Cheat Mode",
+          "category": "jei.key.category.cheat.mode",
+          "categoryName": "JEI (Cheat Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.copy.recipe.id",
+          "action": "Copy Recipe ID to Clipboard",
+          "category": "jei.key.category.dev.tools",
+          "categoryName": "JEI (Dev Tools)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleHideIngredient",
+          "action": "Hide Ingredient",
+          "category": "jei.key.category.edit.mode",
+          "categoryName": "JEI (Edit Mode)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleWildcardHideIngredient",
+          "action": "Hide Ingredient (With Wildcard)",
+          "category": "jei.key.category.edit.mode",
+          "categoryName": "JEI (Edit Mode)",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleEditMode",
+          "action": "Toggle Hide Ingredients Mode",
+          "category": "jei.key.category.edit.mode",
+          "categoryName": "JEI (Edit Mode)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleCheatModeConfigButton",
+          "action": "Toggle Cheat Mode",
+          "category": "jei.key.category.hover.config.button",
+          "categoryName": "JEI (Hovering With Mouse Over Config Button)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.bookmark",
+          "action": "Add/Remove Bookmark",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.keyboard.a",
+          "defaultKey": "key.keyboard.a",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.maxTransferRecipeBookmark",
+          "action": "Craft Bookmarked Recipe (Many)",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.transferRecipeBookmark",
+          "action": "Craft Bookmarked Recipe (One)",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showRecipe",
+          "action": "Show Recipe",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showRecipe2",
+          "action": "Show Recipe",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showUses",
+          "action": "Show Uses",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.keyboard.u",
+          "defaultKey": "key.keyboard.u",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.showUses2",
+          "action": "Show Uses",
+          "category": "jei.key.category.mouse.hover",
+          "categoryName": "JEI (Hovering With Mouse)",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextPage",
+          "action": "Next Page",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI (Overlays)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousPage",
+          "action": "Previous Page",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI (Overlays)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.focusSearch",
+          "action": "Select Search Bar",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI (Overlays)",
+          "key": "key.keyboard.f",
+          "defaultKey": "key.keyboard.f",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleBookmarkOverlay",
+          "action": "Show/Hide Bookmarked Ingredients",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI (Overlays)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.toggleOverlay",
+          "action": "Show/Hide JEI Overlays",
+          "category": "jei.key.category.overlays",
+          "categoryName": "JEI (Overlays)",
+          "key": "key.keyboard.o",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.closeRecipeGui",
+          "action": "Close Recipes GUI",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI (Recipes)",
+          "key": "key.keyboard.escape",
+          "defaultKey": "key.keyboard.escape",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextCategory",
+          "action": "Next Recipe Category",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI (Recipes)",
+          "key": "key.keyboard.backspace",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextRecipePage",
+          "action": "Next Recipe Page",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI (Recipes)",
+          "key": "key.keyboard.backspace",
+          "defaultKey": "key.keyboard.page.down",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.recipeBack",
+          "action": "Previous Recipe",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI (Recipes)",
+          "key": "key.keyboard.backspace",
+          "defaultKey": "key.keyboard.backspace",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousCategory",
+          "action": "Previous Recipe Category",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI (Recipes)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousRecipePage",
+          "action": "Previous Recipe Page",
+          "category": "jei.key.category.recipe.gui",
+          "categoryName": "JEI (Recipes)",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.page.up",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.clearSearchBar",
+          "action": "Clear Search Filter",
+          "category": "jei.key.category.search",
+          "categoryName": "JEI (Search Filter)",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.nextSearch",
+          "action": "Next Search",
+          "category": "jei.key.category.search",
+          "categoryName": "JEI (Search Filter)",
+          "key": "key.keyboard.down",
+          "defaultKey": "key.keyboard.down",
+          "priority": 0
+        },
+        {
+          "name": "key.jei.previousSearch",
+          "action": "Previous Search",
+          "category": "jei.key.category.search",
+          "categoryName": "JEI (Search Filter)",
+          "key": "key.keyboard.up",
+          "defaultKey": "key.keyboard.up",
+          "priority": 0
+        },
+        {
+          "name": "key.carry.desc",
+          "action": "Carry",
+          "category": "key.carry.category",
+          "categoryName": "Carry On",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.aeroworks.joystick.free_camera",
+          "action": "Free Camera While Controlling Joystick",
+          "category": "key.categories.aeroworks",
+          "categoryName": "Aeroworks",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.cataclysm.ability",
+          "action": "Cataclysm Ability",
+          "category": "key.categories.cataclysm",
+          "categoryName": "Cataclysm Key Category",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.cataclysm.boots_ability",
+          "action": "Cataclysm Boots Ability",
+          "category": "key.categories.cataclysm",
+          "categoryName": "Cataclysm Key Category",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.cataclysm.chestplate_ability",
+          "action": "Cataclysm Chestplate Ability",
+          "category": "key.categories.cataclysm",
+          "categoryName": "Cataclysm Key Category",
+          "key": "key.keyboard.y",
+          "defaultKey": "key.keyboard.y",
+          "priority": 0
+        },
+        {
+          "name": "key.cataclysm.helmet_ability",
+          "action": "Cataclysm Helmet Ability",
+          "category": "key.categories.cataclysm",
+          "categoryName": "Cataclysm Key Category",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.clienttweaks.disableStepAssist",
+          "action": "Toggle Disable Step Assist",
+          "category": "key.categories.clienttweaks",
+          "categoryName": "Client Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.clienttweaks.hideOffhandItem",
+          "action": "Toggle Hide Offhand Item",
+          "category": "key.categories.clienttweaks",
+          "categoryName": "Client Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.clienttweaks.disableLogStripping",
+          "action": "Toggle Log Stripping",
+          "category": "key.categories.clienttweaks",
+          "categoryName": "Client Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.climbable_ropes.lock_rope_camera",
+          "action": "Lock Rope Camera",
+          "category": "key.categories.climbable_ropes",
+          "categoryName": "Climbable Ropes",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.configured.open_mod_list",
+          "action": "Open Mod List",
+          "category": "key.categories.configured",
+          "categoryName": "Configured",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.balance",
+          "action": "Balance Grid",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.clear",
+          "action": "Clear Grid",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.compress_all",
+          "action": "Compress All",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.k",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.compress_one",
+          "action": "Compress Item",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.k",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.compress_stack",
+          "action": "Compress Stack",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.k",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.decompress_all",
+          "action": "Decompress All",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.decompress_one",
+          "action": "Decompress Item",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.decompress_stack",
+          "action": "Decompress Stack",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.force_clear",
+          "action": "Force Clear Grid",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.refill_last",
+          "action": "Refill Last",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.refill_last_stack",
+          "action": "Refill Last Stack",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.rotate",
+          "action": "Rotate Grid",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.rotate_counter_clockwise",
+          "action": "Rotate Grid (CCW)",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.spread",
+          "action": "Spread Grid",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.craftingtweaks.transfer_stack",
+          "action": "Transfer to Crafting Grid",
+          "category": "key.categories.craftingtweaks",
+          "categoryName": "Crafting Tweaks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.create_aeronautics_toolgun.open_menu",
+          "action": "Open Create Aeronautics: Toolgun Menu",
+          "category": "key.categories.create_aeronautics_toolgun",
+          "categoryName": "Create Aeronautics: Toolgun",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.createthrusters.physics_goggles.edit_overlays_mode",
+          "action": "Edit Physics Goggles Overlays",
+          "category": "key.categories.createthrusters",
+          "categoryName": "Create Thrusters",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.createthrusters.contraption_network_linker.cycle_scope_mode_modifier",
+          "action": "Linker Scope Cycle Modifier (Alt + Right-click)",
+          "category": "key.categories.createthrusters",
+          "categoryName": "Create Thrusters",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.createthrusters.physics_goggles.diagram_interactive_mode",
+          "action": "Physics Diagram Interactive Mode",
+          "category": "key.categories.createthrusters",
+          "categoryName": "Create Thrusters",
+          "key": "key.keyboard.j",
+          "defaultKey": "key.keyboard.j",
+          "priority": 0
+        },
+        {
+          "name": "key.createthrusters.physics_goggles.toggle_diagram",
+          "action": "Toggle Physics Diagram Overlay",
+          "category": "key.categories.createthrusters",
+          "categoryName": "Create Thrusters",
+          "key": "key.keyboard.h",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.createthrusters.physics_goggles.toggle_force_gizmo",
+          "action": "Toggle Physics Force Gizmo",
+          "category": "key.categories.createthrusters",
+          "categoryName": "Create Thrusters",
+          "key": "key.keyboard.g",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.loadToolbarActivator",
+          "action": "Load Hotbar Activator",
+          "category": "key.categories.creative",
+          "categoryName": "Creative Mode",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.saveToolbarActivator",
+          "action": "Save Hotbar Activator",
+          "category": "key.categories.creative",
+          "categoryName": "Creative Mode",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.easy_mob_spawn_control.openspawncrontrolscreen",
+          "action": "Open spawn control screen",
+          "category": "key.categories.easy_mob_spawn_control",
+          "categoryName": "Easy Mob Spawn Control",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.ebe.open_config",
+          "action": "Open Config Menu",
+          "category": "key.categories.ebe",
+          "categoryName": "Enhanced Block Entities",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.emi_patternizer.patternize",
+          "action": "Encode Patterns",
+          "category": "key.categories.emi_patternizer.category",
+          "categoryName": "EMI Patternizer",
+          "key": "key.keyboard.n",
+          "defaultKey": "key.keyboard.n",
+          "priority": 0
+        },
+        {
+          "name": "key.ftbteams.open_gui",
+          "action": "Open Teams GUI",
+          "category": "key.categories.ftbteams",
+          "categoryName": "FTB Teams",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.attack",
+          "action": "Attack/Destroy",
+          "category": "key.categories.gameplay",
+          "categoryName": "Gameplay",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.pickItem",
+          "action": "Pick Block",
+          "category": "key.categories.gameplay",
+          "categoryName": "Gameplay",
+          "key": "key.mouse.middle",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.use",
+          "action": "Use Item/Place Block",
+          "category": "key.categories.gameplay",
+          "categoryName": "Gameplay",
+          "key": "key.mouse.right",
+          "defaultKey": "key.mouse.right",
+          "priority": 0
+        },
+        {
+          "name": "key.drop",
+          "action": "Drop Selected Item",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.q",
+          "defaultKey": "key.keyboard.q",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.1",
+          "action": "Hotbar Slot 1",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.1",
+          "defaultKey": "key.keyboard.1",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.2",
+          "action": "Hotbar Slot 2",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.2",
+          "defaultKey": "key.keyboard.2",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.3",
+          "action": "Hotbar Slot 3",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.3",
+          "defaultKey": "key.keyboard.3",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.4",
+          "action": "Hotbar Slot 4",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.4",
+          "defaultKey": "key.keyboard.4",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.5",
+          "action": "Hotbar Slot 5",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.5",
+          "defaultKey": "key.keyboard.5",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.6",
+          "action": "Hotbar Slot 6",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.6",
+          "defaultKey": "key.keyboard.6",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.7",
+          "action": "Hotbar Slot 7",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.7",
+          "defaultKey": "key.keyboard.7",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.8",
+          "action": "Hotbar Slot 8",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.8",
+          "defaultKey": "key.keyboard.8",
+          "priority": 0
+        },
+        {
+          "name": "key.hotbar.9",
+          "action": "Hotbar Slot 9",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.9",
+          "defaultKey": "key.keyboard.9",
+          "priority": 0
+        },
+        {
+          "name": "key.inventory",
+          "action": "Open/Close Inventory",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.e",
+          "defaultKey": "key.keyboard.e",
+          "priority": 0
+        },
+        {
+          "name": "key.swapOffhand",
+          "action": "Swap Item With Off Hand",
+          "category": "key.categories.inventory",
+          "categoryName": "Inventory",
+          "key": "key.keyboard.f",
+          "defaultKey": "key.keyboard.f",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryessentials.screen_bulk_drop",
+          "action": "Bulk Drop out of Screen",
+          "category": "key.categories.inventoryessentials",
+          "categoryName": "Inventory Essentials",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryessentials.dump_to_container",
+          "action": "Dump to Container",
+          "category": "key.categories.inventoryessentials",
+          "categoryName": "Inventory Essentials",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryessentials.restock_container",
+          "action": "Restock Container",
+          "category": "key.categories.inventoryessentials",
+          "categoryName": "Inventory Essentials",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryessentials.restock_inventory",
+          "action": "Restock Inventory",
+          "category": "key.categories.inventoryessentials",
+          "categoryName": "Inventory Essentials",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryessentials.sort_inventory",
+          "action": "Sort Inventory",
+          "category": "key.categories.inventoryessentials",
+          "categoryName": "Inventory Essentials",
+          "key": "key.mouse.middle",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.inventoryessentials.single_transfer",
+          "action": "Transfer one",
+          "category": "key.categories.inventoryessentials",
+          "categoryName": "Inventory Essentials",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.open_palette",
+          "action": "Open Palette GUI",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.g",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.open_radial_menu",
+          "action": "Open Radial Menu (Hold)",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.switch_last_mode",
+          "action": "Switch to Last Used Mode",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.toggle_build_mode",
+          "action": "Toggle Build Mode",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.toggle_replace",
+          "action": "Toggle Replace Mode",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.toggle_chipped",
+          "action": "Toggle Variant Auto-Conversion",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.mechtrowel.restriction_modifier",
+          "action": "Wand Restriction (Shift+[This]+Scroll)",
+          "category": "key.categories.mechtrowel",
+          "categoryName": "MechTrowel",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.advancements",
+          "action": "Advancements",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.l",
+          "defaultKey": "key.keyboard.l",
+          "priority": 0
+        },
+        {
+          "name": "key.dynamic_fps.toggle_disabled",
+          "action": "Disable Dynamic FPS (Toggle)",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.dynamic_fps.toggle_forced",
+          "action": "Force Unfocused Mode (Toggle)",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.spectatorOutlines",
+          "action": "Highlight Players (Spectators)",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "gnetum.config.keyMapping",
+          "action": "Open Gnetum Config",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.end",
+          "defaultKey": "key.keyboard.end",
+          "priority": 0
+        },
+        {
+          "name": "key.keybindatlas.open_keyboard",
+          "action": "Open Keybind Atlas",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.f8",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.presencefootsteps.settings",
+          "action": "Open Settings",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.f10",
+          "defaultKey": "key.keyboard.f10",
+          "priority": 0
+        },
+        {
+          "name": "key.voxy.open_sodium_voxy_options",
+          "action": "Open Sodium + Voxy options",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.o",
+          "defaultKey": "key.keyboard.o",
+          "priority": 0
+        },
+        {
+          "name": "key.open_muffler_gui",
+          "action": "Open sound muffler screen",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.screenshot",
+          "action": "Take Screenshot",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.f2",
+          "defaultKey": "key.keyboard.f2",
+          "priority": 0
+        },
+        {
+          "name": "key.smoothCamera",
+          "action": "Toggle Cinematic Camera",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "lambdynlights.key.toggle_fps_dynamic_lighting",
+          "action": "Toggle First-Person Lighting",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.fullscreen",
+          "action": "Toggle Fullscreen",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.f11",
+          "defaultKey": "key.keyboard.f11",
+          "priority": 0
+        },
+        {
+          "name": "key.togglePerspective",
+          "action": "Toggle Perspective",
+          "category": "key.categories.misc",
+          "categoryName": "Miscellaneous",
+          "key": "key.keyboard.f5",
+          "defaultKey": "key.keyboard.f5",
+          "priority": 0
+        },
+        {
+          "name": "key.jump",
+          "action": "Jump",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.space",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.sneak",
+          "action": "Sneak",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.left.control",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.sprint",
+          "action": "Sprint",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.control",
+          "priority": 0
+        },
+        {
+          "name": "key.left",
+          "action": "Strafe Left",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.a",
+          "defaultKey": "key.keyboard.a",
+          "priority": 0
+        },
+        {
+          "name": "key.right",
+          "action": "Strafe Right",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.d",
+          "defaultKey": "key.keyboard.d",
+          "priority": 0
+        },
+        {
+          "name": "key.back",
+          "action": "Walk Backwards",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.s",
+          "defaultKey": "key.keyboard.s",
+          "priority": 0
+        },
+        {
+          "name": "key.forward",
+          "action": "Walk Forwards",
+          "category": "key.categories.movement",
+          "categoryName": "Movement",
+          "key": "key.keyboard.w",
+          "defaultKey": "key.keyboard.w",
+          "priority": 0
+        },
+        {
+          "name": "key.playerlist",
+          "action": "List Players",
+          "category": "key.categories.multiplayer",
+          "categoryName": "Multiplayer",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.chat",
+          "action": "Open Chat",
+          "category": "key.categories.multiplayer",
+          "categoryName": "Multiplayer",
+          "key": "key.keyboard.t",
+          "defaultKey": "key.keyboard.t",
+          "priority": 0
+        },
+        {
+          "name": "key.command",
+          "action": "Open Command",
+          "category": "key.categories.multiplayer",
+          "categoryName": "Multiplayer",
+          "key": "key.keyboard.slash",
+          "defaultKey": "key.keyboard.slash",
+          "priority": 0
+        },
+        {
+          "name": "key.socialInteractions",
+          "action": "Social Interactions Screen",
+          "category": "key.categories.multiplayer",
+          "categoryName": "Multiplayer",
+          "key": "key.keyboard.p",
+          "defaultKey": "key.keyboard.p",
+          "priority": 0
+        },
+        {
+          "name": "key.newvisualkeybing.open_viewer",
+          "action": "Open keybind viewer",
+          "category": "key.categories.newvisualkeybing",
+          "categoryName": "New Visual Keybing",
+          "key": "key.keyboard.f8",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "key.performanceoverlay.config",
+          "action": "key.performanceoverlay.config",
+          "category": "key.categories.performanceoverlay",
+          "categoryName": "key.categories.performanceoverlay",
+          "key": "key.keyboard.f9",
+          "defaultKey": "key.keyboard.f9",
+          "priority": 0
+        },
+        {
+          "name": "placebo.toggleTrails",
+          "action": "Toggle Supporter Trails",
+          "category": "key.categories.placebo",
+          "categoryName": "Placebo",
+          "key": "key.keyboard.keypad.9",
+          "defaultKey": "key.keyboard.keypad.9",
+          "priority": 0
+        },
+        {
+          "name": "placebo.toggleWings",
+          "action": "Toggle Supporter Wings",
+          "category": "key.categories.placebo",
+          "categoryName": "Placebo",
+          "key": "key.keyboard.keypad.8",
+          "defaultKey": "key.keyboard.keypad.8",
+          "priority": 0
+        },
+        {
+          "name": "key.ponder.ponder",
+          "action": "Ponder",
+          "category": "key.categories.ponder",
+          "categoryName": "Ponder",
+          "key": "key.keyboard.w",
+          "defaultKey": "key.keyboard.w",
+          "priority": 0
+        },
+        {
+          "name": "key.sable_schematic_api.blueprint_tool.open",
+          "action": "Open Blueprint Tool",
+          "category": "key.categories.sable_schematic_api",
+          "categoryName": "Sable Schematic API",
+          "key": "key.keyboard.tab",
+          "defaultKey": "key.keyboard.tab",
+          "priority": 0
+        },
+        {
+          "name": "key.the_bumblezone.beehemoth_down",
+          "action": "Beehemoth Fly Down",
+          "category": "key.categories.the_bumblezone",
+          "categoryName": "The Bumblezone",
+          "key": "key.keyboard.caps.lock",
+          "defaultKey": "key.keyboard.caps.lock",
+          "priority": 1
+        },
+        {
+          "name": "key.the_bumblezone.beehemoth_up",
+          "action": "Beehemoth Fly Up",
+          "category": "key.categories.the_bumblezone",
+          "categoryName": "The Bumblezone",
+          "key": "key.keyboard.space",
+          "defaultKey": "key.keyboard.space",
+          "priority": 0
+        },
+        {
+          "name": "key.tracks.open_tuning",
+          "action": "Open Tracks Tuning",
+          "category": "key.categories.tracks",
+          "categoryName": "Tracks",
+          "key": "key.keyboard.j",
+          "defaultKey": "key.keyboard.j",
+          "priority": 0
+        },
+        {
+          "name": "key.trashslot.delete_all",
+          "action": "Delete All Items of Type",
+          "category": "key.categories.trashslot",
+          "categoryName": "TrashSlot",
+          "key": "key.keyboard.delete",
+          "defaultKey": "key.keyboard.delete",
+          "priority": 0
+        },
+        {
+          "name": "key.trashslot.delete",
+          "action": "Delete Item",
+          "category": "key.categories.trashslot",
+          "categoryName": "TrashSlot",
+          "key": "key.keyboard.delete",
+          "defaultKey": "key.keyboard.delete",
+          "priority": 0
+        },
+        {
+          "name": "key.trashslot.toggle_lock",
+          "action": "Lock/Unlock TrashSlot",
+          "category": "key.categories.trashslot",
+          "categoryName": "TrashSlot",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.trashslot.toggle",
+          "action": "Show/Hide TrashSlot",
+          "category": "key.categories.trashslot",
+          "categoryName": "TrashSlot",
+          "key": "key.keyboard.t",
+          "defaultKey": "key.keyboard.t",
+          "priority": 0
+        },
+        {
+          "name": "key.voice_chat_adjust_volumes",
+          "action": "Adjust Volumes",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.disable_voice_chat",
+          "action": "Disable Voice Chat",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.n",
+          "priority": 0
+        },
+        {
+          "name": "key.voice_chat_group",
+          "action": "Group Management",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.g",
+          "priority": 0
+        },
+        {
+          "name": "key.hide_icons",
+          "action": "Hide Voice Chat Icons",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.h",
+          "priority": 0
+        },
+        {
+          "name": "key.mute_microphone",
+          "action": "Mute Microphone",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.m",
+          "priority": 0
+        },
+        {
+          "name": "key.push_to_talk",
+          "action": "Push to Talk",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.voice_chat_toggle_recording",
+          "action": "Toggle Recording",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.voice_chat",
+          "action": "Voice Chat Menu",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.caps.lock",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.voice_chat_settings",
+          "action": "Voice Chat Settings",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.whisper",
+          "action": "Whisper",
+          "category": "key.categories.voicechat",
+          "categoryName": "Voice Chat",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.aero_cam_sync.open_config",
+          "action": "Open mod Config",
+          "category": "key.category.aero_cam_sync",
+          "categoryName": "Aeronautics Camera Sync",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.aero_cam_sync.toggle",
+          "action": "Toggle Camera Tilt",
+          "category": "key.category.aero_cam_sync",
+          "categoryName": "Aeronautics Camera Sync",
+          "key": "key.keyboard.i",
+          "defaultKey": "key.keyboard.i",
+          "priority": 0
+        },
+        {
+          "name": "key.pipeorgans.midi_config",
+          "action": "Open MIDI Config GUI",
+          "category": "key.category.pipeorgans",
+          "categoryName": "Create: Sound of Steam",
+          "key": "key.keyboard.semicolon",
+          "defaultKey": "key.keyboard.semicolon",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.open_backpack",
+          "action": "Open Backpack",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.mouse.5",
+          "defaultKey": "key.keyboard.b",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.inventory_interaction",
+          "action": "Run Inventory Interaction Upgrades",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.tool_swap",
+          "action": "Swap tool based on current block/entity",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_1",
+          "action": "Switch Upgrade in the 1st Slot On/Off",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_2",
+          "action": "Switch Upgrade in the 2nd Slot On/Off",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.x",
+          "defaultKey": "key.keyboard.x",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_3",
+          "action": "Switch Upgrade in the 3rd Slot On/Off",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_4",
+          "action": "Switch Upgrade in the 4th Slot On/Off",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedbackpacks.toggle_upgrade_5",
+          "action": "Switch Upgrade in the 5th Slot On/Off",
+          "category": "key.category.sophisticatedbackpacks.main",
+          "categoryName": "Sophisticated Backpacks",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedcore.sort",
+          "action": "Sort Storage/Backpack",
+          "category": "key.category.sophisticatedcore.main",
+          "categoryName": "Sophisticated Mods",
+          "key": "key.mouse.middle",
+          "defaultKey": "key.mouse.middle",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedcore.transfer_to_inventory",
+          "action": "Transfer to Inventory",
+          "category": "key.category.sophisticatedcore.main",
+          "categoryName": "Sophisticated Mods",
+          "key": "key.keyboard.right.bracket",
+          "defaultKey": "key.keyboard.right.bracket",
+          "priority": 0
+        },
+        {
+          "name": "key.sophisticatedcore.transfer_to_storage",
+          "action": "Transfer to Storage",
+          "category": "key.category.sophisticatedcore.main",
+          "categoryName": "Sophisticated Mods",
+          "key": "key.keyboard.left.bracket",
+          "defaultKey": "key.keyboard.left.bracket",
+          "priority": 0
+        },
+        {
+          "name": "key.createbigcannons.pitch_mode",
+          "action": "Change Carriage Mode",
+          "category": "key.createbigcannons.category",
+          "categoryName": "Create Big Cannons",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.c",
+          "priority": 0
+        },
+        {
+          "name": "key.createbigcannons.fire_controlled_cannon",
+          "action": "Fire Controlled Cannon",
+          "category": "key.createbigcannons.category",
+          "categoryName": "Create Big Cannons",
+          "key": "key.mouse.left",
+          "defaultKey": "key.mouse.left",
+          "priority": 0
+        },
+        {
+          "name": "key.modernfix.config",
+          "action": "Open config screen",
+          "category": "key.modernfix",
+          "categoryName": "ModernFix",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.toolbelt.cycle.left",
+          "action": "Cycle Tool Left",
+          "category": "key.toolbelt.category",
+          "categoryName": "Tool Belt",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.toolbelt.cycle.right",
+          "action": "Cycle Tool Right",
+          "category": "key.toolbelt.category",
+          "categoryName": "Tool Belt",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.toolbelt.slot",
+          "action": "Open Belt Slot Inventory",
+          "category": "key.toolbelt.category",
+          "categoryName": "Tool Belt",
+          "key": "key.keyboard.v",
+          "defaultKey": "key.keyboard.v",
+          "priority": 0
+        },
+        {
+          "name": "key.toolbelt.open",
+          "action": "Swap Tool",
+          "category": "key.toolbelt.category",
+          "categoryName": "Tool Belt",
+          "key": "key.keyboard.r",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.narrate",
+          "action": "Narrate",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.5",
+          "defaultKey": "key.keyboard.keypad.5",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.config",
+          "action": "Open Config",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.0",
+          "defaultKey": "key.keyboard.keypad.0",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_details",
+          "action": "Show Details",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_overlay",
+          "action": "Show Overlay",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.1",
+          "defaultKey": "key.keyboard.keypad.1",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_recipes",
+          "action": "Show Recipes",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.3",
+          "defaultKey": "key.keyboard.keypad.3",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.show_uses",
+          "action": "Show Uses",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.4",
+          "defaultKey": "key.keyboard.keypad.4",
+          "priority": 0
+        },
+        {
+          "name": "key.jade.toggle_liquid",
+          "action": "Toggle Fluid",
+          "category": "modmenu.nameTranslation.jade",
+          "categoryName": "Jade",
+          "key": "key.keyboard.keypad.2",
+          "defaultKey": "key.keyboard.keypad.2",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.cheer",
+          "action": "Cheer",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.clap",
+          "action": "Clap",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.dab",
+          "action": "Dab (Patreon)",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.dance",
+          "action": "Dance (Patreon)",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.exorcist",
+          "action": "Exorcist (Patreon)",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.facepalm",
+          "action": "Facepalm",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.headbang",
+          "action": "Headbang",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.jet",
+          "action": "Jet (Patreon)",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.no",
+          "action": "No",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.point",
+          "action": "Point",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.salute",
+          "action": "Salute",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.shrug",
+          "action": "Shrug",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.tpose",
+          "action": "T-Pose (Patreon)",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.think",
+          "action": "Think",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.wave",
+          "action": "Wave",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.weep",
+          "action": "Weep",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.emote.yes",
+          "action": "Yes",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.patreon_emote.zombie",
+          "action": "Zombie (Patreon)",
+          "category": "quark.gui.keygroup.emote",
+          "categoryName": "Quark Emotes",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.transfer_extract",
+          "action": "Extract Items",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "Quark Inventory",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.transfer_insert",
+          "action": "Insert Items",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "Quark Inventory",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.shift_lock",
+          "action": "Shift Lock",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "Quark Inventory",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.sort_player",
+          "action": "Sort Player Inventory",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "Quark Inventory",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.sort_container",
+          "action": "Sort Target Inventory",
+          "category": "quark.gui.keygroup.inv",
+          "categoryName": "Quark Inventory",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.back",
+          "action": "Back",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.mouse.4",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.camera_mode",
+          "action": "Camera Mode",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.f12",
+          "defaultKey": "key.keyboard.f12",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.change_hotbar",
+          "action": "Hotbar Swapper",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.grave.accent",
+          "defaultKey": "key.keyboard.z",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.narrator_full_readout",
+          "action": "Narrator Full Readout",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.narrator_readout",
+          "action": "Narrator Readout",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.lock_rotation",
+          "action": "Rotation Lock",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.k",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.variant_selector",
+          "action": "Variant Selector",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.r",
+          "priority": 0
+        },
+        {
+          "name": "quark.keybind.autorun",
+          "action": "Walk Automatically",
+          "category": "quark.gui.keygroup.misc",
+          "categoryName": "Quark Misc",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.entityculling.toggle",
+          "action": "Debug toggle culling",
+          "category": "text.entityculling.title",
+          "categoryName": "EntityCulling",
+          "key": "key.keyboard.unknown",
+          "defaultKey": "key.keyboard.unknown",
+          "priority": 0
+        },
+        {
+          "name": "key.tinyredstone.rotation_lock",
+          "action": "Lock rotation (use scroll)",
+          "category": "tinyredstone",
+          "categoryName": "Tiny Redstone",
+          "key": "key.keyboard.left.alt",
+          "defaultKey": "key.keyboard.left.alt",
+          "priority": 0
+        },
+        {
+          "name": "tooltipoverhaul.binds.compare_bind",
+          "action": "Toggle equipment comparison",
+          "category": "tooltipoverhaul.binds.category",
+          "categoryName": "Tooltip Overhaul",
+          "key": "key.keyboard.left.shift",
+          "defaultKey": "key.keyboard.left.shift",
+          "priority": 0
+        }
+      ],
+      "combos": []
+    }
+  ],
+  "priorities": {
+    "quark.keybind.change_hotbar": 0,
+    "keyinfo.copycats.fill_copycat": 0,
+    "create.keyinfo.toolbelt": 0,
+    "create.keyinfo.alt_modifier": 0,
+    "create.keyinfo.ctrl_modifier": 0,
+    "create.keyinfo.toolmenu": 0,
+    "create.keyinfo.rotate_menu": 0,
+    "create.keyinfo.shift_modifier": 0,
+    "simulated.keyinfo.rotate_mode": 0,
+    "simulated.keyinfo.scroll_down": 0,
+    "simulated.keyinfo.scroll_up": 0,
+    "tfmg.keyinfo.custom_button": 0,
+    "tfmg.keyinfo.engine_start": 0,
+    "tfmg.keyinfo.transmission_shift_down": 0,
+    "tfmg.keyinfo.transmission_shift_up": 0,
+    "create_tweaked_controllers.keybind.mouse_reset": 0,
+    "create_tweaked_controllers.keybind.controller_exit": 0,
+    "create_tweaked_controllers.keybind.mouse_focus": 0,
+    "key.modernui.openCenter": 0,
+    "key.modernui.zoom": 0,
+    "key.shouldersurfing.adjust_camera_down": 0,
+    "key.shouldersurfing.adjust_camera_in": 0,
+    "key.shouldersurfing.adjust_camera_left": 0,
+    "key.shouldersurfing.adjust_camera_out": 0,
+    "key.shouldersurfing.adjust_camera_right": 0,
+    "key.shouldersurfing.adjust_camera_up": 0,
+    "key.shouldersurfing.enter_first_person": 0,
+    "key.shouldersurfing.enter_shoulder_surfing": 0,
+    "key.shouldersurfing.enter_third_person_back": 0,
+    "key.shouldersurfing.enter_third_person_front": 0,
+    "key.shouldersurfing.free_look": 0,
+    "key.shouldersurfing.swap_shoulder": 0,
+    "key.shouldersurfing.toggle_camera_coupling": 0,
+    "key.shouldersurfing.toggle_first_person": 0,
+    "key.shouldersurfing.toggle_third_person_back": 0,
+    "key.shouldersurfing.toggle_third_person_front": 0,
+    "key.shouldersurfing.toggle_x_offset_presets": 0,
+    "key.shouldersurfing.toggle_y_offset_presets": 0,
+    "key.shouldersurfing.toggle_z_offset_presets": 0,
+    "railways.keyinfo.bogey_menu": 0,
+    "railways.keyinfo.cycle_menu": 0,
+    "key.wi_zoom.zoom": 0,
+    "gui.xaero_alternative_list_players": 0,
+    "gui.xaero_enlarge_map": 0,
+    "gui.xaero_minimap_server_profiles": 0,
+    "gui.xaero_minimap_settings": 0,
+    "gui.xaero_new_waypoint": 0,
+    "gui.xaero_waypoints_key": 0,
+    "gui.xaero_instant_waypoint": 0,
+    "gui.xaero_reverse_entity_radar": 0,
+    "gui.xaero_switch_waypoint_set": 0,
+    "gui.xaero_display_all_sets": 0,
+    "gui.xaero_toggle_pac_chunk_claims": 0,
+    "gui.xaero_toggle_grid": 0,
+    "gui.xaero_toggle_entity_radar": 0,
+    "gui.xaero_toggle_waypoints": 0,
+    "gui.xaero_toggle_light_overlay": 0,
+    "gui.xaero_toggle_manual_cave_mode": 0,
+    "gui.xaero_toggle_map": 0,
+    "gui.xaero_toggle_map_waypoints": 0,
+    "gui.xaero_toggle_slime": 0,
+    "gui.xaero_toggle_tracked_players_in_world": 0,
+    "gui.xaero_toggle_tracked_players_on_map": 0,
+    "gui.xaero_zoom_in": 0,
+    "gui.xaero_zoom_out": 0,
+    "gui.xaero_world_map_server_settings": 0,
+    "gui.xaero_open_settings": 0,
+    "gui.xaero_open_map": 0,
+    "gui.xaero_quick_confirm": 0,
+    "gui.xaero_toggle_dimension": 0,
+    "gui.xaero_map_zoom_in": 0,
+    "gui.xaero_map_zoom_out": 0,
+    "xaeroplus.keybind.world_map_baritone_elytra_here": 0,
+    "xaeroplus.keybind.world_map_baritone_goal_here": 0,
+    "xaeroplus.keybind.world_map_baritone_path_here": 0,
+    "xaeroplus.setting.2b2t_highways_enabled": 0,
+    "xaeroplus.setting.lava_columns": 0,
+    "xaeroplus.setting.new_chunks_highlighting": 0,
+    "xaeroplus.setting.map_art_grid": 0,
+    "xaeroplus.setting.old_biomes_enabled": 0,
+    "xaeroplus.setting.old_chunks_highlighting": 0,
+    "xaeroplus.setting.palette_new_chunks_highlighting": 0,
+    "xaeroplus.setting.player_spawn_chunks": 0,
+    "xaeroplus.setting.portals": 0,
+    "xaeroplus.setting.portal_skip_detection": 0,
+    "xaeroplus.setting.region_grid": 0,
+    "xaeroplus.setting.show_render_distance": 0,
+    "xaeroplus.setting.spawn_chunks": 0,
+    "xaeroplus.gui.world_map.start_drawing": 0,
+    "xaeroplus.keybind.switch_to_end": 0,
+    "xaeroplus.keybind.switch_to_nether": 0,
+    "xaeroplus.keybind.switch_to_overworld": 0,
+    "xaeroplus.keybind.switch_waypoints_to_end": 0,
+    "xaeroplus.keybind.switch_waypoints_to_nether": 0,
+    "xaeroplus.keybind.switch_waypoints_to_overworld": 0,
+    "xaeroplus.setting.world_tools": 0,
+    "accessories.key.open_accessories_screen": 0,
+    "key.accessorify.open_widget": 0,
+    "key.accessorify.open_ender_chest": 0,
+    "key.accessorify.use_spyglass": 0,
+    "key.beltborne_lanterns.open_config": 0,
+    "key.beltborne_lanterns.open_debug": 0,
+    "key.beltborne_lanterns.toggle_lantern": 0,
+    "key.beltborne_lanterns.toggle_debug": 0,
+    "key.createrailwaysnavigator.route_overlay_options": 0,
+    "key.freecam.configGui": 0,
+    "key.freecam.playerControl": 0,
+    "key.freecam.tripodReset": 0,
+    "key.freecam.toggle": 0,
+    "iris.keybind.reload": 0,
+    "iris.keybind.shaderPackSelection": 0,
+    "iris.keybind.toggleShaders": 0,
+    "iris.keybind.wireframe": 0,
+    "key.jei.cheatOneItem": 0,
+    "key.jei.cheatOneItem2": 0,
+    "key.jei.cheatItemStack": 0,
+    "key.jei.cheatItemStack2": 0,
+    "key.jei.toggleCheatMode": 0,
+    "key.jei.copy.recipe.id": 0,
+    "key.jei.toggleHideIngredient": 0,
+    "key.jei.toggleWildcardHideIngredient": 0,
+    "key.jei.toggleEditMode": 0,
+    "key.jei.toggleCheatModeConfigButton": 0,
+    "key.jei.bookmark": 0,
+    "key.jei.maxTransferRecipeBookmark": 0,
+    "key.jei.transferRecipeBookmark": 0,
+    "key.jei.showRecipe": 0,
+    "key.jei.showRecipe2": 0,
+    "key.jei.showUses": 0,
+    "key.jei.showUses2": 0,
+    "key.jei.nextPage": 0,
+    "key.jei.previousPage": 0,
+    "key.jei.focusSearch": 0,
+    "key.jei.toggleBookmarkOverlay": 0,
+    "key.jei.toggleOverlay": 0,
+    "key.jei.closeRecipeGui": 0,
+    "key.jei.nextCategory": 0,
+    "key.jei.nextRecipePage": 0,
+    "key.jei.recipeBack": 0,
+    "key.jei.previousCategory": 0,
+    "key.jei.previousRecipePage": 0,
+    "key.jei.clearSearchBar": 0,
+    "key.jei.nextSearch": 0,
+    "key.jei.previousSearch": 0,
+    "key.carry.desc": 0,
+    "key.aeroworks.joystick.free_camera": 0,
+    "key.cataclysm.ability": 0,
+    "key.cataclysm.boots_ability": 0,
+    "key.cataclysm.chestplate_ability": 0,
+    "key.cataclysm.helmet_ability": 0,
+    "key.clienttweaks.disableStepAssist": 0,
+    "key.clienttweaks.hideOffhandItem": 0,
+    "key.clienttweaks.disableLogStripping": 0,
+    "key.climbable_ropes.lock_rope_camera": 0,
+    "key.configured.open_mod_list": 0,
+    "key.craftingtweaks.balance": 0,
+    "key.craftingtweaks.clear": 0,
+    "key.craftingtweaks.compress_all": 0,
+    "key.craftingtweaks.compress_one": 0,
+    "key.craftingtweaks.compress_stack": 0,
+    "key.craftingtweaks.decompress_all": 0,
+    "key.craftingtweaks.decompress_one": 0,
+    "key.craftingtweaks.decompress_stack": 0,
+    "key.craftingtweaks.force_clear": 0,
+    "key.craftingtweaks.refill_last": 0,
+    "key.craftingtweaks.refill_last_stack": 0,
+    "key.craftingtweaks.rotate": 0,
+    "key.craftingtweaks.rotate_counter_clockwise": 0,
+    "key.craftingtweaks.spread": 0,
+    "key.craftingtweaks.transfer_stack": 0,
+    "key.create_aeronautics_toolgun.open_menu": 0,
+    "key.createthrusters.physics_goggles.edit_overlays_mode": 0,
+    "key.createthrusters.contraption_network_linker.cycle_scope_mode_modifier": 0,
+    "key.createthrusters.physics_goggles.diagram_interactive_mode": 0,
+    "key.createthrusters.physics_goggles.toggle_diagram": 0,
+    "key.createthrusters.physics_goggles.toggle_force_gizmo": 0,
+    "key.loadToolbarActivator": 0,
+    "key.saveToolbarActivator": 0,
+    "key.easy_mob_spawn_control.openspawncrontrolscreen": 0,
+    "key.ebe.open_config": 0,
+    "key.emi_patternizer.patternize": 0,
+    "key.ftbteams.open_gui": 0,
+    "key.attack": 0,
+    "key.pickItem": 0,
+    "key.use": 0,
+    "key.drop": 0,
+    "key.hotbar.1": 0,
+    "key.hotbar.2": 0,
+    "key.hotbar.3": 0,
+    "key.hotbar.4": 0,
+    "key.hotbar.5": 0,
+    "key.hotbar.6": 0,
+    "key.hotbar.7": 0,
+    "key.hotbar.8": 0,
+    "key.hotbar.9": 0,
+    "key.inventory": 0,
+    "key.swapOffhand": 0,
+    "key.inventoryessentials.screen_bulk_drop": 0,
+    "key.inventoryessentials.dump_to_container": 0,
+    "key.inventoryessentials.restock_container": 0,
+    "key.inventoryessentials.restock_inventory": 0,
+    "key.inventoryessentials.sort_inventory": 0,
+    "key.inventoryessentials.single_transfer": 0,
+    "key.mechtrowel.open_palette": 0,
+    "key.mechtrowel.open_radial_menu": 0,
+    "key.mechtrowel.switch_last_mode": 0,
+    "key.mechtrowel.toggle_build_mode": 0,
+    "key.mechtrowel.toggle_replace": 0,
+    "key.mechtrowel.toggle_chipped": 0,
+    "key.mechtrowel.restriction_modifier": 0,
+    "key.advancements": 0,
+    "key.dynamic_fps.toggle_disabled": 0,
+    "key.dynamic_fps.toggle_forced": 0,
+    "key.spectatorOutlines": 0,
+    "gnetum.config.keyMapping": 0,
+    "key.keybindatlas.open_keyboard": 0,
+    "key.presencefootsteps.settings": 0,
+    "key.voxy.open_sodium_voxy_options": 0,
+    "key.open_muffler_gui": 0,
+    "key.screenshot": 0,
+    "key.smoothCamera": 0,
+    "lambdynlights.key.toggle_fps_dynamic_lighting": 0,
+    "key.fullscreen": 0,
+    "key.togglePerspective": 0,
+    "key.jump": 0,
+    "key.sneak": 0,
+    "key.sprint": 0,
+    "key.left": 0,
+    "key.right": 0,
+    "key.back": 0,
+    "key.forward": 0,
+    "key.playerlist": 0,
+    "key.chat": 0,
+    "key.command": 0,
+    "key.socialInteractions": 0,
+    "key.newvisualkeybing.open_viewer": 0,
+    "key.performanceoverlay.config": 0,
+    "placebo.toggleTrails": 0,
+    "placebo.toggleWings": 0,
+    "key.ponder.ponder": 0,
+    "key.sable_schematic_api.blueprint_tool.open": 0,
+    "key.the_bumblezone.beehemoth_down": 1,
+    "key.the_bumblezone.beehemoth_up": 0,
+    "key.tracks.open_tuning": 0,
+    "key.trashslot.delete_all": 0,
+    "key.trashslot.delete": 0,
+    "key.trashslot.toggle_lock": 0,
+    "key.trashslot.toggle": 0,
+    "key.voice_chat_adjust_volumes": 0,
+    "key.disable_voice_chat": 0,
+    "key.voice_chat_group": 0,
+    "key.hide_icons": 0,
+    "key.mute_microphone": 0,
+    "key.push_to_talk": 0,
+    "key.voice_chat_toggle_recording": 0,
+    "key.voice_chat": 0,
+    "key.voice_chat_settings": 0,
+    "key.whisper": 0,
+    "key.aero_cam_sync.open_config": 0,
+    "key.aero_cam_sync.toggle": 0,
+    "key.pipeorgans.midi_config": 0,
+    "key.sophisticatedbackpacks.open_backpack": 0,
+    "key.sophisticatedbackpacks.inventory_interaction": 0,
+    "key.sophisticatedbackpacks.tool_swap": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_1": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_2": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_3": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_4": 0,
+    "key.sophisticatedbackpacks.toggle_upgrade_5": 0,
+    "key.sophisticatedcore.sort": 0,
+    "key.sophisticatedcore.transfer_to_inventory": 0,
+    "key.sophisticatedcore.transfer_to_storage": 0,
+    "key.createbigcannons.pitch_mode": 0,
+    "key.createbigcannons.fire_controlled_cannon": 0,
+    "key.modernfix.config": 0,
+    "key.toolbelt.cycle.left": 0,
+    "key.toolbelt.cycle.right": 0,
+    "key.toolbelt.slot": 0,
+    "key.toolbelt.open": 0,
+    "key.jade.narrate": 0,
+    "key.jade.config": 0,
+    "key.jade.show_details": 0,
+    "key.jade.show_overlay": 0,
+    "key.jade.show_recipes": 0,
+    "key.jade.show_uses": 0,
+    "key.jade.toggle_liquid": 0,
+    "quark.emote.cheer": 0,
+    "quark.emote.clap": 0,
+    "quark.keybind.patreon_emote.dab": 0,
+    "quark.keybind.patreon_emote.dance": 0,
+    "quark.keybind.patreon_emote.exorcist": 0,
+    "quark.emote.facepalm": 0,
+    "quark.emote.headbang": 0,
+    "quark.keybind.patreon_emote.jet": 0,
+    "quark.emote.no": 0,
+    "quark.emote.point": 0,
+    "quark.emote.salute": 0,
+    "quark.emote.shrug": 0,
+    "quark.keybind.patreon_emote.tpose": 0,
+    "quark.emote.think": 0,
+    "quark.emote.wave": 0,
+    "quark.emote.weep": 0,
+    "quark.emote.yes": 0,
+    "quark.keybind.patreon_emote.zombie": 0,
+    "quark.keybind.transfer_extract": 0,
+    "quark.keybind.transfer_insert": 0,
+    "quark.keybind.shift_lock": 0,
+    "quark.keybind.sort_player": 0,
+    "quark.keybind.sort_container": 0,
+    "quark.keybind.back": 0,
+    "quark.keybind.camera_mode": 0,
+    "quark.keybind.narrator_full_readout": 0,
+    "quark.keybind.narrator_readout": 0,
+    "quark.keybind.lock_rotation": 0,
+    "quark.keybind.variant_selector": 0,
+    "quark.keybind.autorun": 0,
+    "key.entityculling.toggle": 0,
+    "key.tinyredstone.rotation_lock": 0,
+    "tooltipoverhaul.binds.compare_bind": 0
+  }
+}
